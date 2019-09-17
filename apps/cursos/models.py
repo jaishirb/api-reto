@@ -30,7 +30,7 @@ class Curso(ModelBase):
         verbose_name = 'Curso'
         verbose_name_plural = 'Cursos'
 
-    def estudiantes_asociados_count(self):
+    def numero_estudiantes_asociados(self):
         return self.estudiantes.count()
 
     def anadir_estudiante(self, estudiante):

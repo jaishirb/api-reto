@@ -1,8 +1,5 @@
 from rest_framework import serializers
-
-from apps.estudiantes.serializers import EstudianteSerializer
 from . import models
-from apps.utils.shortcuts import get_object_or_none
 
 
 class HorarioSerializer(serializers.ModelSerializer):
@@ -16,7 +13,7 @@ class HorarioSerializer(serializers.ModelSerializer):
 
 
 class CursoSerializer(serializers.ModelSerializer):
-    numero_estudiantes_asociados = serializers.ReadOnlyField(source='estudiantes_asociados_count')
+    num_estudiantes_asociados = serializers.ReadOnlyField(source='numero_estudiantes_asociados')
     hora_inicio_read = serializers.ReadOnlyField(source='horario.hora_inicio')
     hora_fin_read = serializers.ReadOnlyField(source='horario.hora_fin')
 
@@ -29,7 +26,7 @@ class CursoSerializer(serializers.ModelSerializer):
             'hora_fin_read',
             'fecha_inicio',
             'fecha_fin',
-            'numero_estudiantes_asociados'
+            'num_estudiantes_asociados'
         )
 
 

@@ -12,7 +12,6 @@ class ApiModelQuerySet(models.QuerySet):
         super().update(**kwargs)
 
 
-
 class ApiModelManager(models.Manager):
     def get_queryset(self):
         return ApiModelQuerySet(self.model, using=self._db)

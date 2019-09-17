@@ -1,6 +1,4 @@
 from django.db import models
-
-from apps.utils.print_colors import _green
 from .managers import ApiModelManager
 
 

@@ -1,14 +1,14 @@
 
 
-## **Django osw4l boilerplate** ##
-## is a django project, that provides some settings to help to developers to start a new django project with the least effort, so simple how clone a repository ##
+## **Django api-reto** ##
+## Django project to solve NativeApps backend challenge##
 
 ## About the project ##
 
  - project structure defined
  - script for run **[local server](https://github.com/0sw4l/django-simple-started-kit/blob/master/runserver.sh)**
  - script for migrate **[local](https://github.com/0sw4l/django-simple-started-kit/blob/master/local_db.sh)** and **[server](https://github.com/0sw4l/django-simple-started-kit/blob/master/server_db.sh)** db
- - containts **[.gitignore](https://github.com/0sw4l/django-simple-started-kit/blob/master/.gitignore)**  for **.idea/**, **db.sqlite3**, **pyc**, **.pyo** and **pycache dir**
+ - containts **[.gitignore](https://github.com/0sw4l/django-simple-started-kit/blob/master/.gitignore)**  for **.idea/**, **pyc**, **.pyo** and **pycache dir**
  - **python** 3 by default
  - two server environments configured **(local and production)**
  - templates dir configured
